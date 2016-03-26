@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#btn1").click(function () {
+
+                    $("li").filter(":even").css("background-color", "yellow");
+
+                });
+                $("#btn2").click(function () {
+
+                    $("li").first().css("background-color", "red");
+                });
+                $("#btn3").click(function () {
+
+                    $("li").last().css({"background-color":"purple","color":"white"});
+                });
+
+                $("#btn4").click(function () {
+                    $("li").eq(2).css({"background-color":"pink","color":"white"});
+                });
+
+                $("#btn5").click(function () {
+                    $("li").has("ul").css("background-color", "orange");
+                });
+                
+                  
+              
+                $("#btn7").click(function () {
+                    $("li").not(":even").css("background-color", "red");
+                });
+//FOR IS METHOD CLICK EACH LI UNDER THE SECTION LI 
+  $("li.stg").click(function () {
+                        var li = $(this),
+                                isWithTwo = li.is(function () {
+                                    return $("strong", this).length === 2;
+                                });
+                        if (isWithTwo) {
+                            li.css("background-color", "green");
+                        } else {
+                            li.css("background-color", "red");
+                        }
+                    });
+
+
+            })
+
+        </script>
+    </head>
+    <body>
+        <div>Hello</div>
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2
+            <ul>
+      <li>list item 2-a</li>
+      <li>list item 2-b</li>
+    </ul>
+            
+            </li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+            <li>list item 5</li>
+        </ul>
+       <h2>FOR IS() METHOD //FOR IS METHOD CLICK  LI .STG UNDER THIS H2  </h2>
+        <ul>
+  <li class="stg"><strong>list</strong> item 1 - one strong tag</li>
+  <li class="stg"><strong>list</strong> item <strong>2</strong> -
+    two <span>strong tags</span></li>
+  <li class="stg">list item 3</li>
+  <li class="stg">list item 4</li>
+  <li class="stg">list item 5</li>
+</ul>
+        <button id="btn1">filter()</button>
+        <button id="btn2">first()</button>
+        <button id="btn3">last()</button>
+        <button id="btn4">eq( 2 )</button>
+        <button id="btn5">has(  )</button>
+        
+        <button id="btn7">.not()</button>
+
+</html>

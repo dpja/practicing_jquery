@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {
+                margin: 8px;
+                font-size: 16px;
+            }
+            .C-magenta{
+                color:magenta;
+            }
+            .C-red{
+                color:red;
+            }
+            .light{
+                background-color:blueviolet;
+                color:white;
+                font-size: 36px;
+            }
+
+        </style>
+        <!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+        <script src="../../../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function () {
+            
+                    var count=0;
+                    $("p").click(function(){
+                        count++;
+                    $(this).text("para--1---NO. OF clicks---"+count);
+                    $(this).toggleClass("light", count % 2 === 0);
+                 
+            });
+           
+            })
+        </script>
+
+    </head>
+    <body>
+        <h1>.removeClass( [className ] )</h1>
+        TYPE :Function( Integer index, String className ) => String
+        <h2> A function returning one or more space-separated class names to be removed. 
+            Receives the index position of the element in the set and the old class value as arguments.
+        </h2>
+
+        
+         <h1>.toggleClass( function)</h1>
+       
+      <h4>Add the "highlight" class to the clicked paragraph on every alternate click of that paragraph, 
+          remove it every first and second click.</h4>
+         <p>para--1</p>
+       
+    </body>
+</html>

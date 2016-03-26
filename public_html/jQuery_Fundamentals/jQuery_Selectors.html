@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+        $("ul li:first").css({"color" :"red"});
+           $("li > ul").css({"background-color" :"yellow"}); 
+           $("p strong, .mk").css({"background-color" :"gray","color" :"white"});
+           $("li:not(.mk)").css({"background-color" :"pink","color" :"white","font-weight":"bold"});
+            })
+          
+        </script>
+    </head>
+    <body>
+       <ul>
+  <li >Coffee</li>
+  <li>Tea
+  <ul>
+  <li>Tea 1</li>
+  <li>Tea 2</li>
+  </ul>
+  </li>
+  <li class="mk" >Milk</li>
+</ul>
+        <p class="mk">Hello 1</p>  
+        <p ><strong>Hello 2</strong></p>  
+    </body>
+</html>

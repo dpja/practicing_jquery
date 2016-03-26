@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#btn1").click(function(){
+                
+        $( "li.item-a" ).parent().css( "background-color", "red" )
+            });
+            $("#btn2").click(function(){
+                
+        $( "li.item-a" ).parents().css( "background-color", "yellow" )
+            });
+            $("#btn3").click(function(){
+                
+        $( "li.item-3" ).parentsUntil(".level-2").css( "background-color", "magenta" )
+            });
+            
+            $("#btn4").click(function(){
+                
+        $( "li.item-a" )
+  .closest( "li" )
+  .css( {"background-color": "gray","color":"white"} );
+            });
+            
+           
+            })
+          
+        </script>
+    </head>
+    <body>
+   <ul class="level-1">
+  <li class="item-i"> level-1  item I</li>
+  <li class="item-ii">level-1  itemII
+    <ul class="level-2">
+      <li class="item-a"> level-2  item A</li>
+      <li class="item-b">level-2  item B
+        <ul class="level-3">
+          <li class="item-1">level-3 item 1</li>
+          <li class="item-2"> level-3 item 2</li>
+          <li class="item-3"> level-3 item 3</li>
+        </ul>
+      </li>
+      <li class="item-c">level-2  item C</li>
+    </ul>
+  </li>
+  <li class="item-iii">level-1  item III</li>
+</ul>
+        <button id="btn1">parent()</button>
+        <button id="btn2">parents()</button>
+        <button id="btn3">parentsUntil()</button>
+        <button id="btn4">closest()</button>
+    </body>
+</html>

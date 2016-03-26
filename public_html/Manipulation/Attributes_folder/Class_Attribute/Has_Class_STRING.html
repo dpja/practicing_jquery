@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {
+                margin: 8px;
+                font-size: 16px;
+            }
+           
+            .lighting {
+                 color: skyblue;
+                background: yellow;
+               // font-size: 40px;
+            }
+            .check{
+                
+            }
+           
+        </style>
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+  <script src="../../../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    
+                    if($("ul li").hasClass("lighting")) {
+                        
+                   $(".lighting").append("<li style='color:magenta'>APPENDED---APPLES AND ORANGES</li>") ;
+                  // $("li:not('.lighting')").append("<li>NOT APPENDED---APPLES AND ORANGES</li>") ;
+                   
+                        
+                    }  ; 
+                   $( "li:nth-child(2n)" ).append( $("li").hasClass("check").toString() ) ; 
+                })
+            
+                
+            })
+        </script>
+      
+    </head>
+    <body>
+        <h1>.hasClass( className )</h1>
+         TYPE :STRING
+        <h2>  Determine whether any of the matched elements are assigned the given class..</h2>
+        
+        <ul>
+   <li class="lighting">ITEM--1. </li>
+   <li class="check">ITEM--2.---class is-----</li>
+   <li class="lighting">ITEM--3. </li>
+   <li class="check">ITEM--4---class is-----. </li>
+</ul>
+    
+        
+        <button>HAS  class </button>
+    </body>
+</html>

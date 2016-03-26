@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {
+                margin: 8px;
+                font-size: 16px;
+            }
+            .gray{
+                color:white;
+                background-color:gray;
+                font-size: 35px;
+            }
+            .lightcoral{
+                color:white;
+                 background-color:lightcoral;
+                font-size: 55px;
+            }
+            .steelblue{
+                color:white;
+                 background-color:steelblue;
+                font-size: 65px;
+            }
+           
+            .orangered{
+                color:white;
+                 background-color:orangered;
+                font-size: 85px;
+            }
+            .green{
+                color:white;
+                 background-color:green;
+                font-size: 75px;
+                
+            }
+           
+
+        </style>
+        <!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+        <script src="../../../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function () {
+               
+
+
+
+
+                 
+                    $("p.steelblue").click(function () {
+                    $(this).toggleClass("green ");
+                });
+                   
+});
+
+
+              
+
+
+          
+        </script>
+
+    </head>
+    <body>
+        <h1>.toggleClass( className )</h1>
+        TYPE :STRING
+        <h2>Add or remove one or more classes from each element in the set of matched elements,
+            depending on either the class's presence or the value of the state argument.</h2>
+        <h1>.toggleClass( className,state )</h1>
+        TYPE :STRING One or more class names (separated by spaces) to be toggled for each element in the matched set.
+      TYPE :state  A Boolean (not just truthy/falsy) value to determine whether the class should be added or removed.
+        
+
+        
+     
+       <p class="steelblue "> toggle background between steelblue and green </p>
+
+      
+    </body>
+</html>

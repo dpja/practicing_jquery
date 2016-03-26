@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .red{
+                color :red;
+                font-size:25px;
+            }
+            .green{
+                color :green;
+                font-size:55px; 
+            }
+        </style>
+        <!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+        <script src="../../../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                var currentClass ;
+            $("button").click(function(){
+
+//                      $("ul li").addClass(function(index){
+//                          
+//                          return "item-" + index;
+//                      }) ; 
+ currentClass = "red";
+            $("ul li").addClass(function(index, currentClass) {
+            var addedClass;
+                    if (currentClass == "red") {
+            addedClass = "green";
+                 
+            }
+            return addedClass;
+            });
+            })
+            })
+        </script>
+
+    </head>
+    <body>
+        <h1>.addClass( className )</h1>
+        TYPE :FUNCTION
+        <h2>  Adds the specified class(es) to each element in the set of matched elements.</h2>
+       
+        <ul >
+            <li class="red"><a href="#">Menu Option 1</a></li>
+            <li class="red"><a href="#">Menu Option 2</a></li>
+            <li class="red"><a href="#">Menu Option 3</a></li>
+        </ul>
+        <button>Add class to LAST H1</button>
+    </body>
+</html>

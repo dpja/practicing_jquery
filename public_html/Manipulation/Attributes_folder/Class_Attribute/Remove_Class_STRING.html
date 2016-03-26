@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {
+                margin: 8px;
+                font-size: 16px;
+            }
+            .C-magenta{
+               color:magenta;
+            }
+            .C-red{
+                 color:red;
+            }
+            .BLUEVIOLET{
+                color:blueviolet;
+            }
+           
+        </style>
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+  <script src="../../../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    
+                   
+                        
+                   $("p").removeClass("C-magenta,C-red").addClass("BLUEVIOLET") ;
+                   $("p").addClass("C-magenta,C-red") ;
+                  // $("li:not('.lighting')").append("<li>NOT APPENDED---APPLES AND ORANGES</li>") ;
+                   
+                        
+                   
+                  
+                })
+            
+                
+            })
+        </script>
+      
+    </head>
+    <body>
+        <h1>.removeClass( [className ] )</h1>
+         TYPE :STRING
+        <h2> Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
+</h2>
+        
+     <p class="C-magenta">Joe--1 class is C-magenta </p>
+     <p>Joe---2</p>
+     <p class="C-red">Joe---3 class is C-red</p>
+     <p>Joe---4</p>
+        
+        <button>removeClass  </button>
+    </body>
+</html>

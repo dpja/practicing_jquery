@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {
+                margin: 8px;
+                font-size: 16px;
+            }
+           
+            .highlighting {
+                 color: skyblue;
+                background: yellow;
+                font-size: 40px;
+            }
+        </style>
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+  <script src="../../../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    
+                      $("h1:last").addClass("highlighting") ; 
+                    
+                })
+            
+                
+            })
+        </script>
+      
+    </head>
+    <body>
+        <h1>.addClass( className )</h1>
+         TYPE :STRING
+        <h2>  Adds the specified class(es) to each element in the set of matched elements.</h2>
+        <h1>USING ADD CLASS ON THIS ONE</h1>
+        
+        <button>Add class to LAST H1</button>
+    </body>
+</html>

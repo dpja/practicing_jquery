@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#btn1").click(function(){
+                
+        $( "li.third-item" ).prev().css( "background-color", "red" );
+
+            });
+            $("#btn2").click(function(){
+                
+      $('div.apress').find('ul').children('li').last().html('All we need is an attentive reader!');
+   $('ul').children('li').last().css({'color':'seagreen'});
+            });
+          
+            
+           
+          
+            })
+          
+        </script>
+    </head>
+    <body>
+    
+        <div class="apress">
+           
+                <span>A new reader waits to learn jQuery.</span>
+                <ul>
+                    <li>Have you done your homework?</li>
+                    <li>Is it that you are having leisure time?</li>
+                    <li>Would you like to have challenges in life?</li>
+                    <li>Click here to know the solution.</li>
+                </ul>
+           
+            <p>If you liked this example, tell others. If not, tell us!</p>
+        </div>
+         
+        <button id="btn2">Chaining()</button>
+     
+      
+   
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#btn1").click(function(){
+                
+        $( "li.third-item" ).prev().css( "background-color", "red" );
+
+            });
+            $("#btn2").click(function(){
+                
+     $('div').next().css('border', '1px solid red')
+            });
+            $("#btn3").click(function(){
+                
+     $('ul').siblings("p").css('border', '1px solid green');
+            });
+          
+            
+           
+          
+            })
+          
+        </script>
+    </head>
+    <body>
+        <div>Hello</div>
+  <ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li class="third-item">list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+</ul>
+        <p>para 1</p>
+        <p>para 2</p>
+        <button id="btn1">prev()</button>
+        <button id="btn2">next()</button>
+        <button id="btn3">siblings("p")</button>
+   
+</html>

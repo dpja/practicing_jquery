@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+
+            p{
+                font-family: cursive;
+                color:red;
+                padding:30px;
+                border:4px  solid green;
+            }
+            h3{
+                font-family: cursive;
+                font-size:29px;
+                font-weight: 800;
+                color:hotpink;
+            }
+
+
+        </style>
+        <script>
+            $(document).ready(function () {
+
+                $('#btn1').on('click', function () {
+                    $('h1').text("The dimensions are----outerWidth---"+ $("p").outerWidth() + "   and  width----  " + $("p").width()+ "   and  innerwidth----  " + $("p").innerWidth() );
+                });
+               
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <br><br>
+
+        <div class="apress-container">
+            <p>This is a paragraph</p>
+            <p>This is second paragraph</p>
+            <h1></h1>
+            <button id="btn1">Calculate the Dimensions</button>
+           
+        </div>
+
+
+    </body>
+</html>

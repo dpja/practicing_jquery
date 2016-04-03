@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+            div{
+
+                color:blueviolet;
+            }
+            h2{
+                font-family: cursive;
+                color:red;
+            }
+            h3{
+                font-family: cursive;
+                font-size:29px;
+                font-weight: 800;
+                color:hotpink;
+            }
+
+
+        </style>
+        <script>
+            $(document).ready(function () {
+
+                $("#btn1").click(function () {
+                    $(".ap").before("<h2>Using before method </h2>")
+                    $(".ap").append("<h2>Using append method </h2>")
+                   
+                });
+                $("#btn2").click(function () {
+                    $(".unorderedlist").after("<h3>Using after method </h3>");
+                  
+                });
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <br><br>
+
+        <div class="container">
+            <div class="ap">para1para1para1para1para1para1para1para1
+                <ul class="unorderedlist">
+                    <li>List 1</li> 
+                    <li>List 2</li> 
+                    <li>List 3</li> 
+                </ul>
+                para1para1para1para1para1para1para1</div>
+            <div class="ap">para2para2para2para2para2para2para2para2para2para2para2para2para2para2</div>
+             
+                </div>
+                <button id="btn1">Before method</button>
+                <button id="btn2">After method</button>
+                
+                </body>
+                </html>

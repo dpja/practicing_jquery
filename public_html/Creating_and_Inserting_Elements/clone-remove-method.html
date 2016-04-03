@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+
+            p{
+                font-family: cursive;
+                color:red;
+            }
+            h3{
+                font-family: cursive;
+                font-size:29px;
+                font-weight: 800;
+                color:hotpink;
+            }
+
+
+        </style>
+        <script>
+            $(document).ready(function () {
+
+                $('button.remove').on('click', function () {
+                    $('p').remove();
+                });
+                $('#btn2').click( function () {
+                    $('span').clone().prependTo("h1");
+                });
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <br><br>
+
+        <div class="apress-container">
+            <p>This is a paragraph</p>
+            <p>This is second paragraph</p>
+            <h1>This is <span>cloning</span>heading</h1>
+            <button class="remove">Remove The Paragraphs</button>
+            <button id="btn2">Clone The Paragraphs</button>
+        </div>
+
+
+    </body>
+</html>

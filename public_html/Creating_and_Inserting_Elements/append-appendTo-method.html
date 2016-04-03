@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+            div{
+
+                color:blueviolet;
+            }
+            h2{
+                font-family: cursive;
+                color:red;
+            }
+            h3{
+                 font-family: cursive;
+                font-size:29px;
+                font-weight: 800;
+                color:hotpink;
+            }
+          
+
+        </style>
+        <script>
+            $(document).ready(function () {
+
+                $("#btn1").click(function () {
+                    $(".inner").append("<h2>Using Append method </h2>")
+                });
+                $("#btn2").click(function () {
+                    $("<h3>Using Append To method </h3>").appendTo(".inner");
+                });
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <br><br>
+
+       <div class="inner"> It is a container area.</div>
+        <button id="btn1">Append</button>
+        <button id="btn2">Append To</button>
+</html>

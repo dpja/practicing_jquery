@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+            h1{
+                font-family:cursive;
+                color:blueviolet;
+            }
+            h2{
+                font-family:cursive;
+                color:red;
+            }
+            h3{
+                font-family:cursive;
+                font-weight: 800;
+                color:yellowgreen;
+            }
+            p{
+                font-family:ariel;
+                font-weight: 800;
+                font-size:29px;
+                color:hotpink;
+            }
+
+        </style>
+        <script>
+            $(document).ready(function () {
+                $("#check1").change(function () {
+                    $("h1").text("Displaying the checked attribute---using ATTR MEthod-------" + $(this).attr("checked"));
+                    $("h2").text("Checking if it is  the checked or not---using IS MEthod-------" + $(this).is(":checked"));
+                })
+
+
+
+
+            })
+
+        </script>
+    </head>
+    <body>
+        <input id="check1" type="checkbox" checked="checked"> click and unclick the checkbox
+
+        <br><br>
+
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+</html>

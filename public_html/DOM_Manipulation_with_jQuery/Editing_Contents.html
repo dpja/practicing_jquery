@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+            h1{
+               
+                color:blueviolet;
+            }
+            h2{
+               
+                color:red;
+            }
+            h3{
+               
+                font-weight: 800;
+                color:yellowgreen;
+            }
+            p{
+                font-family:ariel;
+                font-weight: 800;
+                font-size:29px;
+                color:hotpink;
+            }
+            
+        </style>
+        <script>
+            $(document).ready(function(){
+    
+     $("#btn1").click(function(){
+         alert("the contents in text()with class ap------"+$(".ap").text()); 
+         alert("the contents in text() with class  ul------"+$("ul").text()); 
+          alert("the contents in text() with class container  ap------"+$(".container .ap ").text()); 
+         alert("the contents in text() with class  container------"+$(".container").text()); 
+       
+      
+         
+     })
+     
+     $("#btn2").click(function(){
+          alert("the contents in html() with class ap------"+$(".ap").html()); 
+         alert("the contents in html() with class  ul------"+$("ul").html()); 
+          alert("the contents in html() with class container  ap------"+$(".container .ap ").html()); 
+         alert("the contents in html() with class  container------"+$(".container").html()); 
+       
+     })
+     
+           
+            })
+          
+        </script>
+    </head>
+    <body>
+
+   <br><br>
+ 
+   <button id="btn1">The contents are in text</button>
+   <button id="btn2">The contents are in html</button>
+       <div class="container">
+    <div class="ap">People are</div>
+    <ul>
+        <li>King</li>
+        <li>Chief</li>
+    </ul>
+</div>
+</html>

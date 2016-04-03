@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+            .div1{
+
+                width:400px;
+                height:400px;
+                background-color: yellow;
+              //  margin:50px auto;
+            }
+
+        </style>
+        <script>
+            $(document).ready(function () {
+                $(".div1").bind({
+                    
+                   mouseenter:function(event){
+                      $("h1").text(" mouseenter"+ "(" + event.pageX + " , " +  event.pageY + ")" );
+                   },mouseleave:function(){
+                         $("h1").text(" mouseleave"+ "(" + event.pageX + " , " +  event.pageY + ")" );
+                     
+                   }
+                    
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div class="div1">
+            HELLO
+        </div>
+        <h1></h1>
+    </body>
+</html>

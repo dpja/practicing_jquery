@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+
+            button{
+                font-size:40px;
+                background-color:yellow;
+
+            }
+
+            img{
+                //  margin:10px 10px 0px 150px;border:2px solid gold;  float:left;
+                display:none;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+
+
+                $("#clickme1").click(function () {
+
+                    $("#image1").slideDown("slow", function () {
+
+                        alert("slideDown Completed");
+                        ;
+
+
+                    });
+                });
+                $("#clickme2").click(function () {
+
+                    $("#image1").slideToggle("slow", function () {
+
+                        alert("slideToggle Completed");
+                        ;
+
+
+                    });
+                });
+
+            });
+
+
+        </script>
+    </head>
+    <body>
+
+        <br><br>
+
+
+        <img id="image1" src="../pics/Quote-3.jpg" alt="" width="500" height="400">
+
+
+        <p></p>
+        <br>
+
+
+        <button id="clickme1" >Slide Down</button>
+        <button id="clickme2" >Slide Toggle</button>
+
+
+
+    </body>
+</html>

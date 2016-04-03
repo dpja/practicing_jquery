@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+
+          
+
+
+        </style>
+        <script>
+            $(document).ready(function () {
+
+               $( "#clickme" ).click(function() {
+  $( "#book" ).animate({
+    opacity: 0.5,
+    left: "+=50",
+    height: "toggle",
+    top:"+=30",
+    borderWidth:"+=10px"
+  }, 5000, function() {
+    // Animation complete.
+  });
+});
+            })
+
+        </script>
+    </head>
+    <body>
+
+        <br><br>
+
+       
+<img id="book" src="../pics/Kites.jpg" alt="" width="500" height="400"
+  style="position: relative;left:20px; margin:100px 150px 0px 150px;border:2px solid gold;">
+<br>
+            <button id="clickme" style="position: relative;">Animate</button>
+           
+      
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <script>
+            $(document).ready(function(){
+          
+                
+
+   $( "#target" ).blur(function() {
+  alert( "Handler for .blur() called." );
+  
+});
+   $( "#target" ).focus(function() {
+  alert( "Handler for .focus() called." );
+  $( "#target" ).css({"background-color":"yellow"});
+  
+});
+  $( "#btn1" ).click(function() {
+  alert( "Handler for .click() called." );
+});          
+        
+});
+        </script>
+    </head>
+    <body>
+    
+       <div class="apress">
+    <form>
+  <input id="target" type="text" value="Field 1">
+  <input type="text" value="Field 2">
+</form>
+           <br>
+           <br>
+<div id="other">
+    <button id="btn1">Trigger the Click handler</button>
+</div>
+
+        
+</div>
+       
+     
+      
+   
+</html>

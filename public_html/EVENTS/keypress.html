@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-1.12.1.js"></script>
+        <style>
+           
+
+        </style>
+        <script>
+            $(document).ready(function () {
+                var count=0;
+                $(".div1").keypress(function(event){
+                  
+                    count++;
+                 $("h1").html("no. of letters pressed are---"+ count +"and the event.which---" + event.which) ; 
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div >
+            <label>enter name   :</label>   <input type="text"  class="div1" placeholder="enter anything">
+        </div>
+        <h1>HELLO</h1>
+    </body>
+</html>
